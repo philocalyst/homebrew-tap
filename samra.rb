@@ -1,6 +1,5 @@
 cask "samra" do
-  version "1.4.1"
-  license "MIT"
+  version "v1.4.1"
   sha256 :no_check
   url "https://github.com/NSAntoine/Samra/releases/latest/download/Samra.app.zip"
   name "Samra"
