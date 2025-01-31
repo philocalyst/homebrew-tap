@@ -1,6 +1,6 @@
 # My taps
 
-- [_Samra_](https://github.com/NSAntoine/Samra) **▰▰** [**LICENSE**](https://github.com/NSAntoine/Samra/blob/main/LICENSE)
+- [_Samra_](https://github.com/NSAntoine/Samra)  **▰**  [**LICENSE**](https://github.com/NSAntoine/Samra/blob/main/LICENSE)
 
 ## Disclaimer
 
