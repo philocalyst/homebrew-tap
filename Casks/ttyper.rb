@@ -5,7 +5,7 @@ class Ttyper < Formula
   license "MIT"
 
   on_macos do
-    url "https://github.com/max-niederman/ttyper/releases/latest/download/ttyper-x86_64-apple-darwin.tar.gz"
+    url "https://github.com/max-niederman/ttyper/releases/latest/download/ttyper-aarch64-apple-darwin.tar.gz "
     sha256 :no_check
   end
 
