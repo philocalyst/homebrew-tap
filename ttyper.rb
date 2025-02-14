@@ -13,29 +13,29 @@ class Ttyper < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-aarch64-apple-darwin.tar.gz"
-      sha256 "6e622e621f6f716f470ef8b5fc6b3b86e87c1f44ba3e0f9d4fc6a91fbe2561ac"
+      sha256 "76dabc64a5b38fb4379db3104431c748f1be0b2ccb3319d2ec464d3a266b6a3e"  # aarch64-apple-darwin
     else
       url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-x86_64-apple-darwin.tar.gz"
-      sha256 "9f8d85d28c3d96a2cc4ce86eef2e2f9ed71b843b5452272e0afcebee4f76e7fb"
+      sha256 "837236926baa343f8d732e29f9880c89ebf0d8355f93b0821623a35dc71fbee0"  # x86_64-apple-darwin
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "b63b9c8e21234b03514fcf4917c04cf33289c8e2a6c641a38f2a0fc5e7c46e8a"
+        url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-x86_64-unknown-linux-musl.tar.gz"
+        sha256 "0697132e20c64e5b764b2133f205aba17aea2580935892a2037a0fae875eac90"  # x86_64-unknown-linux-musl
       else
-        url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-i686-unknown-linux-gnu.tar.gz"
-        sha256 "1d2f57926d03f40b9ba0f0bb9f8c33df88b8b1385941b5988b0cf5b7c0e99ddb"
+        url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-i686-unknown-linux-musl.tar.gz"
+        sha256 "6f2aedcb8ac78408dd0e5f5f63c57f60c8e5161744a45faefcdcaa8ed19d958c"  # i686-unknown-linux-musl
       end
     elsif Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "1d2f57926d03f40b9ba0f0bb9f8c33df88b8b1385941b5988b0cf5b7c0e99ddb"
+        url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-aarch64-unknown-linux-musl.tar.gz"
+        sha256 "23f2f0282e2e4cbcf22834094c7488a218f781896192ac13878e49ee4434fbe1"  # aarch64-unknown-linux-musl
       else
         url "https://github.com/max-niederman/ttyper/releases/download/v#{version}/ttyper-arm-unknown-linux-musleabihf.tar.gz"
-        sha256 "1d2f57926d03f40b9ba0f0bb9f8c33df88b8b1385941b5988b0cf5b7c0e99ddb"
+        sha256 "21db98ea4d5e74d4dfbc66c7941e94747feddd5e8bc8aa9a1ef60685c54de6ad"  # arm-unknown-linux-musleabihf
       end
     end
   end
