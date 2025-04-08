@@ -1,8 +1,8 @@
 class Caligula < Formula
-  desc "A user-friendly, lightweight TUI for disk imaging"
+  desc "User-friendly, lightweight TUI for disk imaging"
   homepage "https://github.com/ifd3f/caligula"
-  version :latest
-  license "GPLv3"
+  version "0.4.8"
+  license "GPL-3.0-or-later"
   head "https://github.com/ifd3f/caligula.git", branch: "main"
 
   livecheck do
@@ -20,17 +20,25 @@ class Caligula < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-        url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-x86_64-linux"
+      url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-x86_64-linux"
     elsif Hardware::CPU.arm?
-        url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-aarch64-linux"
+      url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-aarch64-linux"
     end
   end
 
   def install
-    bin.install "caligula"
+    binary_name = ""
+    if OS.mac?
+      binary_name = Hardware::CPU.arm? ? "caligula-aarch64-darwin" : "caligula-x86_64-darwin"
+    else
+      binary_name = Hardware::CPU.intel? ? "caligula-x86_64-linux" : "caligula-aarch64-linux"
+    end
+
+    bin.install binary_name => "caligula"
+    chmod 0755, bin/"caligula" # Make executable
   end
 
   test do
-    system "#{bin}/caligula", "--version"
+    system bin/"caligula", "--version"
   end
 end
