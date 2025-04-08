@@ -1,8 +1,8 @@
 class Ttyper < Formula
   desc "Terminal-based typing test built with Rust and Ratatui"
   homepage "https://github.com/max-niederman/ttyper"
+  version :latest
   license "MIT"
-  version "1.6.0"
   head "https://github.com/max-niederman/ttyper.git", branch: "main"
 
   livecheck do
@@ -45,6 +45,6 @@ class Ttyper < Formula
   end
 
   test do
-    system "#{bin}/ttyper", "--version"
+    system "bin/ttyper", "--version"
   end
 end
