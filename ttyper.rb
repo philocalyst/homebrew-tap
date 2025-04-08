@@ -1,7 +1,7 @@
 class Ttyper < Formula
   desc "Terminal-based typing test built with Rust and Ratatui"
   homepage "https://github.com/max-niederman/ttyper"
-  version :latest
+  version "1.6.0"
   license "MIT"
   head "https://github.com/max-niederman/ttyper.git", branch: "main"
 
