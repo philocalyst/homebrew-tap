@@ -1,6 +1,9 @@
 # My taps
 
-- [_Samra_](https://github.com/NSAntoine/Samra)  **▰**  [**LICENSE**](https://github.com/NSAntoine/Samra/blob/main/LICENSE)
+- [_Battery Toolkit_](https://github.com/mhaeuser/Battery-Toolkit) - Tool for managing MacBook battery health and charging behavior  **▰**  [**LICENSE**](https://github.com/mhaeuser/Battery-Toolkit/blob/main/LICENSE)
+- [_Caligula_](https://github.com/ifd3f/caligula) - A user-friendly, lightweight TUI for disk imaging  **▰**  `GPLv3` ([**LICENSE**](https://github.com/ifd3f/caligula/blob/main/LICENSE))
+- [_Samra_](https://github.com/NSAntoine/Samra) - Native Asset Catalog explorer & editor  **▰**  [**LICENSE**](https://github.com/NSAntoine/Samra/blob/main/LICENSE)
+- [_Ttyper_](https://github.com/max-niederman/ttyper) - Terminal-based typing test built with Rust and Ratatui  **▰**  `MIT` ([**LICENSE**](https://github.com/max-niederman/ttyper/blob/main/LICENSE))
 
 ## Disclaimer
 
