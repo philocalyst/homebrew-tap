@@ -1,7 +1,6 @@
 class Caligula < Formula
   desc "User-friendly, lightweight TUI for disk imaging"
   homepage "https://github.com/ifd3f/caligula"
-  version "0.4.8"
   license "GPL-3.0-or-later"
   head "https://github.com/ifd3f/caligula.git", branch: "main"
 
@@ -12,17 +11,17 @@ class Caligula < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-aarch64-darwin"
+      url "https://github.com/ifd3f/caligula/releases/download/v0.4.8/caligula-aarch64-darwin"
     else
-      url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-x86_64-darwin"
+      url "https://github.com/ifd3f/caligula/releases/download/v0.4.8/caligula-x86_64-darwin"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-x86_64-linux"
+      url "https://github.com/ifd3f/caligula/releases/download/v0.4.8/caligula-x86_64-linux"
     elsif Hardware::CPU.arm?
-      url "https://github.com/ifd3f/caligula/releases/download/v#{version}/caligula-aarch64-linux"
+      url "https://github.com/ifd3f/caligula/releases/download/v0.4.8/caligula-aarch64-linux"
     end
   end
 
