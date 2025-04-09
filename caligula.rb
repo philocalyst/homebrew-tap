@@ -26,11 +26,10 @@ class Caligula < Formula
   end
 
   def install
-    binary_name = ""
-    if OS.mac?
-      binary_name = Hardware::CPU.arm? ? "caligula-aarch64-darwin" : "caligula-x86_64-darwin"
+    binary_name = if OS.mac?
+      Hardware::CPU.arm? ? "caligula-aarch64-darwin" : "caligula-x86_64-darwin"
     else
-      binary_name = Hardware::CPU.intel? ? "caligula-x86_64-linux" : "caligula-aarch64-linux"
+      Hardware::CPU.intel? ? "caligula-x86_64-linux" : "caligula-aarch64-linux"
     end
 
     bin.install binary_name => "caligula"
