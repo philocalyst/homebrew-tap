@@ -35,7 +35,6 @@ class Caligula < Formula
 
     # Change name to caligula
     bin.install binary_name => "caligula"
-    chmod 0755, bin/"caligula" # Make executable
   end
 
   test do
