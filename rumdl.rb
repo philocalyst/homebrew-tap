@@ -1,6 +1,7 @@
 class Rumdl < Formula
   desc "High-performance Markdown linter and formatter"
   homepage "https://github.com/rvben/rumdl"
+  version "0.0.36"
   license "MIT"
   head "https://github.com/rvben/rumdl.git", branch: "main"
 
@@ -43,9 +44,9 @@ class Rumdl < Formula
         # Raise an error if the architecture is unsupported by the provided binaries
         odie "Unsupported Linux architecture: #{Hardware::CPU.arch}"
       end
-      else
+    else
       odie "Unsupported operating system"
-                  end
+    end
 
     # Install the downloaded binary, renaming it to "rumdl"
     bin.install binary_name => "rumdl"
