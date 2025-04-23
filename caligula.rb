@@ -34,10 +34,10 @@ class Caligula < Formula
     end
 
     # Change name to caligula
-    bin.install binary_name => "caligula"
+    bin.install(binary_name => "caligula")
   end
 
   test do
-    system bin/"caligula", "--version"
+    system bin / "caligula", "--version"
   end
 end

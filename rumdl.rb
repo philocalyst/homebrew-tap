@@ -24,7 +24,7 @@ class Rumdl < Formula
     if Hardware::CPU.intel?
       # URL for Linux Intel (x86_64) binary
       url "https://github.com/rvben/rumdl/releases/download/v#{version}/rumdl_linux_amd64"
-    # Check specifically for standard ARM64 (AArch64)
+      # Check specifically for standard ARM64 (AArch64)
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       # URL for Linux ARM (aarch64) binary
       url "https://github.com/rvben/rumdl/releases/download/v#{version}/rumdl_linux_arm64"
@@ -37,22 +37,22 @@ class Rumdl < Formula
     elsif OS.linux?
       if Hardware::CPU.intel?
         "rumdl_linux_amd64"
-      # Check specifically for standard ARM64 (AArch64)
+        # Check specifically for standard ARM64 (AArch64)
       elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
         "rumdl_linux_arm64"
       else
         # Raise an error if the architecture is unsupported by the provided binaries
-        odie "Unsupported Linux architecture: #{Hardware::CPU.arch}"
+        odie("Unsupported Linux architecture: #{Hardware::CPU.arch}")
       end
     else
-      odie "Unsupported operating system"
+      odie("Unsupported operating system")
     end
 
     # Install the downloaded binary, renaming it to "rumdl"
-    bin.install binary_name => "rumdl"
+    bin.install(binary_name => "rumdl")
   end
 
   test do
-    system bin/"rumdl", "--version"
+    system bin / "rumdl", "--version"
   end
 end
