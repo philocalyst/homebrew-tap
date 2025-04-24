@@ -3,7 +3,8 @@ class Infat < Formula
   homepage "https://github.com/philocalyst/infat"
   version "1.0.0"
   license "MIT"
-  head "https://github.com/philocalyst/infat", branch: "main"
+  head "https://github.com/philocalyst/infat.git", branch: "main"
+
 
   livecheck do
     url :stable
