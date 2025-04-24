@@ -5,18 +5,19 @@ class Infat < Formula
   license "MIT"
   head "https://github.com/philocalyst/infat.git", branch: "main"
 
-
   livecheck do
     url :stable
     strategy :github_latest
   end
 
+  author = "philocalyst"
+
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ifd3f/infat/releases/download/v#{version}/infat-arm64-apple-macos"
-      sha256 "7561035b28605f20e99a05770052d79b86e052544c9e77ee434ec0ebc53d6ea7"
+      url "https://github.com/#{author}/infat/releases/download/v#{version}/infat-arm64-apple-macos.tar.gz"
+      sha256 "17c7a637099025e7b2675acc3591414abf676f83820f82606f61ebcde7bc9c4f"
     else
-      url "https://github.com/ifd3f/infat/releases/download/v#{version}/infat-x86_64-apple-macos"
+      url "https://github.com/#{author}/infat/releases/download/v#{version}/infat-x86_64-apple-macos.tar.gz"
       sha256 "5f71df7af17bc1948df36df33d462ed98021525a7eed4777c48caa30a5b06399"
     end
   end
