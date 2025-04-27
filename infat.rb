@@ -23,9 +23,7 @@ class Infat < Formula
   end
 
   def install
-    binary_name = Hardware::CPU.arm? ? "infat-arm64-apple-macos" : "infat-x86_64-apple-macos"
-    # Change name to infat
-    bin.install(binary_name => "infat")
+    bin.install "infat"
   end
 
   test do
