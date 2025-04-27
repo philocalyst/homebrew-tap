@@ -1,7 +1,7 @@
 class Infat < Formula
   desc "Set default openers for file formats and url schemes"
   homepage "https://github.com/philocalyst/infat"
-  version "2.3.1"
+  version "2.3.2"
   license "MIT"
   head "https://github.com/philocalyst/infat.git", branch: "main"
 
@@ -15,10 +15,10 @@ class Infat < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/#{author}/infat/releases/download/v#{version}/infat-arm64-apple-macos.tar.gz"
-      sha256 "7c0641c7dda9b5e57f59cea8af0919a490a588310a6bb1633614a66884b2ae17"
+      sha256 "6b45f011f5c5f8e1f7c9d77d947a028663882f97f8892825c3aff45fe76b8876"
     else
       url "https://github.com/#{author}/infat/releases/download/v#{version}/infat-x86_64-apple-macos.tar.gz"
-      sha256 "046b3ab04f14b0af3fcae3d91c554e7430805973baf20311a9227708710d0f20"
+      sha256 "d9b8d192b8f6eadedc4ad00ab7828612d08e4780006e4b62b4db5a973807f5ce"
     end
   end
 
