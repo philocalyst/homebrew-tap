@@ -5,7 +5,6 @@
 - [_Samra_](https://github.com/NSAntoine/Samra) **--** Native Asset Catalog explorer & editor  **▰** `MIT`  [**LICENSE**](https://github.com/NSAntoine/Samra/blob/main/LICENSE)
 - [_Ttyper_](https://github.com/max-niederman/ttyper) **--** Terminal-based typing test built with Rust **▰**  `MIT` ([**LICENSE**](https://github.com/max-niederman/ttyper/blob/main/LICENSE))
 - [_Rumdl](https://github.com/rvben/rumdl) **--** A Markdown Linter written in Rust
-- [Infat](https://github.com/philocalyst/infat) **--** Set filetype and URL assocations on macOS `MIT`
 
 ## Disclaimer
 
