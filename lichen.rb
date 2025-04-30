@@ -33,8 +33,6 @@ class Lichen < Formula
     bash_completion.install "lic.bash" => "lic"
     fish_completion.install "lic.fish"
     zsh_completion.install "_lic"
-    elvish_completion.install "lic.elv"
-    prefix.install "_lic.ps1"
   end
 
   test do
