@@ -1,7 +1,7 @@
 class Lichen < Formula
   desc "Command-line tool to manage license files and headers in software projects"
   homepage "https://github.com/philocalyst/lichen"
-  version "0.3.5"
+  version "1.1.0"
   license "MIT"
   head "https://github.com/philocalyst/lichen.git", branch: "main"
 
@@ -29,7 +29,12 @@ class Lichen < Formula
   end
 
   def install
-    bin.install("lic")
+    bin.install "lic"
+    bash_completion.install "lic.bash" => "lic"
+    fish_completion.install "lic.fish"
+    zsh_completion.install "_lic"
+    elvish_completion.install "lic.elv"
+    prefix.install "_lic.ps1"
   end
 
   test do
