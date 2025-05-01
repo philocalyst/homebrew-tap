@@ -1,7 +1,7 @@
 class Lichen < Formula
   desc "Command-line tool to manage license files and headers in software projects"
   homepage "https://github.com/philocalyst/lichen"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
   head "https://github.com/philocalyst/lichen.git", branch: "main"
 
@@ -37,5 +37,6 @@ class Lichen < Formula
 
   test do
     system bin / "lic", "--version"
+    system bin / "lic", "--help"
   end
 end
