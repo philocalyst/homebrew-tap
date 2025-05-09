@@ -1,4 +1,4 @@
-class BlueBoy < Formula
+class Blueboy < Formula
   desc "Set default openers for file formats and url schemes"
   homepage "https://github.com/philocalyst/blueboy"
   version "1.1.2"
@@ -14,17 +14,17 @@ class BlueBoy < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/#{author}/blueboy/releases/download/v#{version}/blueboy-arm64-apple-macos.tar.gz"
+      url "https://github.com/#{author}/blueboy/releases/download/v#{version}/bboy-arm64-apple-macos.tar.gz"
     else
-      url "https://github.com/#{author}/blueboy/releases/download/v#{version}/blueboy-x86_64-apple-macos.tar.gz"
+      url "https://github.com/#{author}/blueboy/releases/download/v#{version}/bboy-x86_64-apple-macos.tar.gz"
     end
   end
 
   def install
-    bin.install "blueboy"
+    bin.install "bboy"
   end
 
   test do
-    system bin / "blueboy", "--version"
+    system bin / "bboy", "--version"
   end
 end
