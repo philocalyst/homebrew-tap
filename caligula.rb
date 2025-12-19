@@ -1,7 +1,7 @@
 class Caligula < Formula
   desc "User-friendly, lightweight TUI for disk imaging"
   homepage "https://github.com/ifd3f/caligula"
-  version "0.4.8"
+  version "0.4.10"
   license "GPL-3.0-or-later"
   head "https://github.com/ifd3f/caligula.git", branch: "main"
 
