@@ -1,4 +1,4 @@
-# My taps
+# My Homebrew tap
 
 - [_Battery Toolkit_](https://github.com/mhaeuser/Battery-Toolkit) - Tool for managing MacBook battery health and charging behavior **--** `MIT`  [**LICENSE**](https://github.com/mhaeuser/Battery-Toolkit/blob/main/LICENSE.txt)
 - [_Caligula_](https://github.com/ifd3f/caligula) **--** A user-friendly, lightweight TUI for disk imaging  **▰**  `GPLv3` ([**LICENSE**](https://github.com/ifd3f/caligula/blob/main/LICENSE))
